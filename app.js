@@ -2,7 +2,15 @@ const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
 const gameplay = document.getElementById("gameplay");
 
-const winningNumber = 3;
+
+
+// Random number function
+const random = () => {
+    let random = Math.floor(Math.random() * 10) + 1
+    return random
+}
+
+const winningNumber = random();
 
 // handleClick function
 const handleClick = (e) => {
